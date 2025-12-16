@@ -23,6 +23,12 @@
     <td>{{album.fecha_lanzamiento}}</td>
     <td>{{album.genero}}</td>
     <td>{{album.descripcion}}</td>
+
+      <td class="d-flex gap-2">
+    <a href="{{ url_for('albums.update_album', id=album.id) }}" class="btn btn-warning btn-sm">
+        Actualizar
+    </a>
+    </td>
  
   {% endfor %}
 
