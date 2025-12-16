@@ -28,6 +28,9 @@
     <a href="{{ url_for('albums.update_album', id=album.id) }}" class="btn btn-warning btn-sm">
         Actualizar
     </a>
+    <a href="{{ url_for('albums.delete_album', id=album.id) }}" class="btn btn-danger btn-sm">
+        Eliminar
+    </a>
     </td>
  
   {% endfor %}
